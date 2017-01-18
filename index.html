@@ -151,6 +151,99 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-02.HTML5编码" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="HTML5编码"><a href="#HTML5编码" class="headerlink" title="HTML5编码"></a>HTML5编码</h1><p><img src="imgs/desk.jpg" alt=""></p>
+<blockquote>
+<p>在<code>HTML4.01</code>中对于编码格式要求较高，比如大小写，比如<code>style</code>标签，<code>script</code>标签的定义都有许多需要注意的地方,但是在<code>HTML5</code> 中却简洁很多</p>
+</blockquote>
+<p>[TOC]</p>
+<h2 id="Html代码测试"><a href="#Html代码测试" class="headerlink" title="Html代码测试"></a>Html代码测试</h2><blockquote>
+<p>为了比较<code>HTML5</code>和<code>HTML4.01</code>的差异，我们可以使用不同的<code>Doctype</code>写入相同的内容进行比较</p>
+</blockquote>
+<ul>
+<li>建议使用新式浏览器进行测试</li>
+<li><strong>比如</strong>：<ul>
+<li>大于等于ie9</li>
+<li>Chrome</li>
+<li>Firefox</li>
+<li>Opera</li>
+<li>Safari</li>
+</ul>
+</li>
+</ul>
+<p><strong>代码1（HTML4.01 4s版本）</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Content-Type"</span> <span class="attr">content</span>=<span class="string">"text/html;charset=UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">IMG</span> <span class="attr">src</span>=<span class="string">"https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><br><br><strong>代码2（HTML5）</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!doctype html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Document<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">IMG</span> <span class="attr">src</span>=<span class="string">"https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/logo/bd_logo1_31bdc765.png"</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<h3 id="测试方法1：直接在浏览器中运行"><a href="#测试方法1：直接在浏览器中运行" class="headerlink" title="测试方法1：直接在浏览器中运行"></a>测试方法1：直接在浏览器中运行</h3><ul>
+<li><strong>测试效果：</strong><ul>
+<li>如果不考虑图片显示的正确性我们能够看到的显示效果是一样的</li>
+<li>这是因为新式浏览器对于<code>HTML</code>代码的包容，细微的差异浏览器内部直接就处理了，但是在<code>ie6</code>时代的前端工程师却不是这样的</li>
+</ul>
+</li>
+<li><strong>拓展阅读：</strong><ul>
+<li><a href="http://www.zhihu.com/topic/19564944/top-answers" target="_blank" rel="external">ie6知乎精华回答</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="测试方法2：使用w3c测试网站"><a href="#测试方法2：使用w3c测试网站" class="headerlink" title="测试方法2：使用w3c测试网站"></a>测试方法2：使用w3c测试网站</h3><ul>
+<li><strong>测试网址：</strong><ul>
+<li><a href="https://validator.w3.org/" target="_blank" rel="external">w3c编码规范测试</a><br> <br></li>
+</ul>
+</li>
+<li><strong>测试方式：</strong><ul>
+<li>如图所示<img src="imgs/测试HTML代码.png" alt="测试HTML代码.png-54kB"></li>
+</ul>
+</li>
+</ul>
+<p><br></p>
+<ul>
+<li><p><strong>测试效果：</strong></p>
+<ul>
+<li><p>html4错误信息<br><img src="imgs/html4错误代码.png" alt="html4错误代码.png-48.4kB"><br><br></p>
+</li>
+<li><p>html5错误信息<br><img src="imgs/html5错误代码.png" alt="html5错误代码.png-38.7kB"><br><br></p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a><strong>结语</strong></h2><ul>
+<li><code>HTML5</code>相比于<code>HTML4.01</code>时代.编码风格更为简洁,当然改变不仅于此。</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/01/18/02.HTML5编码/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-HTML第二天" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
